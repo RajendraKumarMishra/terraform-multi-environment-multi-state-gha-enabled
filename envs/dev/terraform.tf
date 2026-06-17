@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "vivek-234121221-rrn"
-    key            = "envs/dev/terraform.tfstate"
-    region         = "us-east-1"
+    bucket         = "rajendra-160620260340-rrn"
+    key            = "envs/gha-dev/terraform.tfstate"
+    region         = "ca-central-1"
     encrypt        = true
-    dynamodb_table = "tfstate-lock"
+    dynamodb_table = "rajendra-tfstate-lock"
   }
 }
